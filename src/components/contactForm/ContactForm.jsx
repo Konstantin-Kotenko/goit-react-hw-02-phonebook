@@ -24,7 +24,7 @@ const Button = styled.button`
   margin-top: ${({ theme }) => theme.space.ml};
   width: 130px;
   border-radius: 5px;
-  border: none;
+  border: ${({ theme }) => theme.borders.none};
   cursor: pointer;
 `;
 

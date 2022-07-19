@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { nanoid } from 'nanoid';
+import { Box } from './components/box';
 import { ContactForm } from './components/contactForm';
 import { ContactList } from './components/contacts';
 import { Filter } from './components/filter';
@@ -57,7 +58,7 @@ export class App extends Component {
     const visibleContacts = this.getVisibleContacts();
 
     return (
-      <div>
+      <Box>
         <h1>Phonebook</h1>
         <ContactForm onSubmit={this.formSubmitHandler} />
         <h2>Contacts</h2>
@@ -66,7 +67,7 @@ export class App extends Component {
           contacts={visibleContacts}
           onDeleteContact={this.deleteContact}
         />
-      </div>
+      </Box>
     );
   }
 }
