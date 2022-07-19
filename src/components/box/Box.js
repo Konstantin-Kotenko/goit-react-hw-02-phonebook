@@ -1,9 +1,8 @@
 import styled from 'styled-components';
 
 export const Box = styled.div`
-  margin: 0 auto;
+  margin: 20px auto 0;
   align-items: center;
   width: 380px;
-  background-color: aqua;
   border-radius: ${({ theme }) => theme.radii.normal};
 `;
