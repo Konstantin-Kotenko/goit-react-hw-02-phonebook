@@ -1,10 +1,6 @@
-import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import { ContactItem } from './ContactItem';
-
-const List = styled.ul`
-  width: 320px;
-`;
+import { ContactItem } from './Item/Item';
+import { List } from './ContactList.styled';
 
 export const ContactList = ({ contacts, onDeleteContact }) => {
   return (

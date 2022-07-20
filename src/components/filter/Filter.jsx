@@ -1,16 +1,5 @@
-import styled from 'styled-components';
 import PropTypes from 'prop-types';
-
-const Label = styled.label`
-  display: flex;
-  flex-direction: column;
-  width: 320px;
-`;
-
-const Input = styled.input`
-  width: 200px;
-  margin-top: ${({ theme }) => theme.space.ml};
-`;
+import { Label, Input } from './Filter.styled';
 
 export const Filter = ({ value, onChange }) => {
   return (
